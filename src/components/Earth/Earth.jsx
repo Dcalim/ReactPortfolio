@@ -2,6 +2,9 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { getFresnelMat } from "./getFresnelMat";
 import { getStarfield } from "./getStarfield";
+import earthUrl from "/src/components/Earth/textures/00_earthmap1k.jpg";
+import lightsUrl from "/src/components/Earth/textures/03_earthlights1k.jpg"
+import cloudUrl from "/src/components/Earth/textures/earthcloudmaptrans.jpg"
 
 const EarthScene = () => {
   const containerRef = useRef(null);
@@ -34,7 +37,7 @@ const EarthScene = () => {
 
     // Earth Material
     const earthMat = new THREE.MeshStandardMaterial({
-      map: loader.load("src/components/Earth/textures/00_earthmap1k.jpg"),
+      map: loader.load(earthUrl),
       roughness: 1,
       metalness: 0,
     });
@@ -43,7 +46,7 @@ const EarthScene = () => {
 
     // City lights layer
     const lightsMat = new THREE.MeshBasicMaterial({
-      map: loader.load("src/components/Earth/textures/03_earthlights1k.jpg"),
+      map: loader.load(lightsUrl),
       blending: THREE.AdditiveBlending,
       transparent: true,
     });
@@ -52,7 +55,7 @@ const EarthScene = () => {
 
     // Clouds layer
     const cloudsMat = new THREE.MeshStandardMaterial({
-      map: loader.load("src/components/Earth/textures/earthcloudmaptrans.jpg"),
+      map: loader.load(cloudUrl),
       transparent: true,
       opacity: 0.4,
       blending: THREE.AdditiveBlending,
