@@ -25,6 +25,7 @@ import squaredUrl from "/src/assets/Photos/squared.jpg"
 import hoopsUrl from "/src/assets/Photos/hoops.jpg"
 import eventUrl from "/src/assets/Photos/DCalim_EventPoster.jpg"
 import companyUrl from "/src/assets/Photos/DCalim_MockUp.png"
+import resumeUrl from "/src/assets/Photos/DionCalim_Fall2025.jpg"
 
 
 function App() {
@@ -94,7 +95,7 @@ function App() {
       <NavBody>
         <NavbarLogo />
         <NavItems items={navItems} />
-        <NavbarButton variant="primary" href={"src/assets/Photos/DionCalim_Fall2025.jpg"}>RESUME</NavbarButton>
+        <NavbarButton variant="primary" href={resumeUrl}>RESUME</NavbarButton>
       </NavBody>
 
       <MobileNav>
