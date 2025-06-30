@@ -55,7 +55,7 @@ function App() {
       src: eventUrl,
     },
     {
-      title: "Company Website",
+      title: "Company Website Mockup",
       button: "View",
       buttonLink: "src/assets/Photos/DCalim_MockUp.png",
       src: companyUrl,
