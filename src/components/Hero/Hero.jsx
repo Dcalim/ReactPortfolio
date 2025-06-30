@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <div className="relative flex flex-col items-center justify-center text-center">
       <BlurText
-        text="DION CALIMS"
+        text="DION CALIM"
         delay={200}
         animateBy="letters"
         onAnimationComplete={handleAnimationComplete}
