@@ -1,4 +1,6 @@
 import React from 'react'
+import photo1 from "/src/assets/Photos/4D68B9B3-F3F2-42B3-AFC5-FE206D830DDF.PNG"
+import photo2 from "/src/assets/Photos/6FF49DC7-3D52-41AD-A22C-3FB7E2D91A4B.PNG"
 
 const About = () => {
   return (

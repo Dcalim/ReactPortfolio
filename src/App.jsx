@@ -28,31 +28,31 @@ function App() {
       title: "Vcard Manager",
       button: "View",
       buttonLink: "",
-      src: "src/assets/Photos/vCardManager.jpg",
+      src: "/src/assets/Photos/vCardManager.jpg",
     },
     {
       title: "Squared",
       button: "View",
       buttonLink: "https://github.com/Dcalim/Squared-Game",
-      src: "src/assets/Photos/squared.jpg",
+      src: "/src/assets/Photos/squared.jpg",
     },
     {
       title: "Hoops",
       button: "View",
       buttonLink: "https://github.com/Dcalim/Hoops-Game",
-      src: "src/assets/Photos/hoops.jpg",
+      src: "/src/assets/Photos/hoops.jpg",
     },
     {
       title: "Event Promotion",
       button: "View",
       buttonLink: "src/assets/Photos/DCalim_EventPoster.jpg",
-      src: "src/assets/Photos/DCalim_EventPoster.jpg",
+      src: "/src/assets/Photos/DCalim_EventPoster.jpg",
     },
     {
       title: "Company Website",
       button: "View",
       buttonLink: "src/assets/Photos/DCalim_MockUp.png",
-      src: "src/assets/Photos/DCalim_MockUp.png",
+      src: "/src/assets/Photos/DCalim_MockUp.png",
     }
 
   ];
