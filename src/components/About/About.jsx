@@ -11,10 +11,10 @@ const About = () => {
                 <hr className="my-2 border-t border-[#F5F5F5] w-[40%]" /> 
             </div>
             <div>
-                <img src="src/assets/Photos/4D68B9B3-F3F2-42B3-AFC5-FE206D830DDF.PNG" className='mx-2 py-0 w-[50%]'></img>
+                <img src={photo1} className='mx-2 py-0 w-[50%]'></img>
             </div>
             <div>
-                <img src="src/assets/Photos/6FF49DC7-3D52-41AD-A22C-3FB7E2D91A4B.PNG" className='mx-40 w-[40%] -mt-25'></img>
+                <img src={photo2} className='mx-40 w-[40%] -mt-25'></img>
             </div>
         </div>
         <div className='text-white justify-start max-w-[50%] mt-25 pr-6 text-lg'>

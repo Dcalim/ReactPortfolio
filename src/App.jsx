@@ -20,6 +20,11 @@ import { Carousel } from './components/Carousel/Carousel'
 import Contact from './components/Contact/Contact'
 import About from './components/About/About'
 import EarthScene from './components/Earth/Earth'
+import vCardUrl from "/src/assets/Photos/vCardManager.jpg"
+import squaredUrl from "/src/assets/Photos/squared.jpg"
+import hoopsUrl from "/src/assets/Photos/hoops.jpg"
+import eventUrl from "/src/assets/Photos/DCalim_EventPoster.jpg"
+import companyUrl from "/src/assets/Photos/DCalim_MockUp.png"
 
 
 function App() {
@@ -28,31 +33,31 @@ function App() {
       title: "Vcard Manager",
       button: "View",
       buttonLink: "",
-      src: "/src/assets/Photos/vCardManager.jpg",
+      src: vCardUrl,
     },
     {
       title: "Squared",
       button: "View",
       buttonLink: "https://github.com/Dcalim/Squared-Game",
-      src: "/src/assets/Photos/squared.jpg",
+      src: squaredUrl,
     },
     {
       title: "Hoops",
       button: "View",
       buttonLink: "https://github.com/Dcalim/Hoops-Game",
-      src: "/src/assets/Photos/hoops.jpg",
+      src: hoopsUrl,
     },
     {
       title: "Event Promotion",
       button: "View",
       buttonLink: "src/assets/Photos/DCalim_EventPoster.jpg",
-      src: "/src/assets/Photos/DCalim_EventPoster.jpg",
+      src: eventUrl,
     },
     {
       title: "Company Website",
       button: "View",
       buttonLink: "src/assets/Photos/DCalim_MockUp.png",
-      src: "/src/assets/Photos/DCalim_MockUp.png",
+      src: companyUrl,
     }
 
   ];
