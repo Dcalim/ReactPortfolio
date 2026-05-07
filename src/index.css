@@ -12,7 +12,8 @@
 
 @theme {
   --font-Rubik-Mono-One: Rubik-Mono-One, "Sans Serif";
-  --font-IBM: IMB-Plex-Sans, "Sans Serif"
+  --font-IBM: IMB-Plex-Sans, "Sans Serif";
+  --font-heading: "Space Grotesk", system-ui, ui-sans-serif, sans-serif;
 }
 
   .rubik-glitch-regular {

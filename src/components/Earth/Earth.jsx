@@ -6,7 +6,7 @@ import earthUrl from "/src/components/Earth/textures/00_earthmap1k.jpg";
 import lightsUrl from "/src/components/Earth/textures/03_earthlights1k.jpg"
 import cloudUrl from "/src/components/Earth/textures/earthcloudmaptrans.jpg"
 
-const EarthScene = () => {
+const EarthScene = ({ className = "w-full h-[500px] md:h-[700px]" }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -104,7 +104,7 @@ const EarthScene = () => {
     };
   }, []);
 
-  return <div ref={containerRef} className="w-full h-[500px] md:h-[700px]" />;
+  return <div ref={containerRef} className={className} />;
 };
 
 export default EarthScene;
