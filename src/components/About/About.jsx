@@ -85,7 +85,7 @@ const About = () => {
       <div className="mt-10 space-y-5 px-4 sm:space-y-6 sm:px-6 md:mt-12 lg:px-12">
         {/* Row 1: Hi I'm Dion + Photo (side by side on lg+) */}
         <div className="grid grid-cols-1 gap-5 sm:gap-6 lg:grid-cols-2">
-          <InfoCard icon={IconSparkles} title="Hi, I'm Dion">
+          <InfoCard icon={IconSparkles} title="Hi, I'm Dion" className="order-2 lg:order-1">
             <p>
               I'm a third-year{" "}
               <span className="font-medium text-white">
@@ -101,7 +101,7 @@ const About = () => {
             </p>
           </InfoCard>
 
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
+          <div className="relative order-1 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] lg:order-2">
             <img
               src={photo1}
               alt="Dion Calim portrait"

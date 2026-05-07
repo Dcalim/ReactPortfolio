@@ -65,7 +65,7 @@ const Slide = ({
   const isExpanded = expandedIndex === index;
 
   return (
-    <div className="[perspective:1200px] [transform-style:preserve-3d]">
+    <div className="[perspective:1200px] [transform-style:preserve-3d] overflow-hidden">
       <li
         ref={slideRef}
         className="group relative z-10 mx-[2.5vmin] flex h-[70vmin] w-[70vmin] max-h-[440px] max-w-[440px] flex-1 flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-neutral-900 text-center text-white opacity-100 transition-all duration-300 ease-in-out sm:mx-[3vmin] sm:h-[64vmin] sm:w-[64vmin]"
