@@ -160,7 +160,7 @@ function App() {
 
       <section
         id="project"
-        className="relative w-full overflow-x-hidden overflow-y-visible scroll-mt-14 py-10 sm:scroll-mt-16 sm:py-12 lg:py-14"
+        className="relative w-full overflow-x-hidden overflow-y-hidden scroll-mt-14 py-10 sm:scroll-mt-16 sm:py-12 lg:py-14"
       >
         <SectionHeader
           eyebrow="02 / Work"
