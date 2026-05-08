@@ -15,6 +15,7 @@ import {
   MobileNavMenu,
 } from "./components/Navbar/resizable-navbar";
 import Hero from './components/Hero/Hero'
+import homeHeroUrl from "/src/assets/Photos/HomeHero.png"
 import { Carousel } from './components/Carousel/Carousel'
 import Contact from './components/Contact/Contact'
 import About from './components/About/About'
@@ -35,19 +36,9 @@ function App() {
       buttonLink: "https://github.com/Dcalim",
       src: vCardUrl,
       status: "Completed",
-      tech: ["React", "Node.js", "MongoDB"],
+      tech: ["C", "Python", "SQL"],
       summary:
         "Contact manager app with secure authentication, searchable records, and a clean dashboard for organizing digital business cards.",
-    },
-    {
-      title: "Squared",
-      button: "View",
-      buttonLink: "https://github.com/Dcalim/Squared-Game",
-      src: squaredUrl,
-      status: "In Progress",
-      tech: ["React", "JavaScript", "CSS"],
-      summary:
-        "Interactive puzzle game focused on smooth gameplay, responsive UI, and reusable components for scalable feature additions.",
     },
     {
       title: "Hoops",
@@ -55,7 +46,7 @@ function App() {
       buttonLink: "https://github.com/Dcalim/Hoops-Game",
       src: hoopsUrl,
       status: "Completed",
-      tech: ["React", "Canvas", "Tailwind"],
+      tech: ["Processing"],
       summary:
         "Arcade-style basketball mini game with score tracking, animated interactions, and mobile-friendly controls.",
     },
@@ -64,17 +55,37 @@ function App() {
       button: "View",
       buttonLink: "src/assets/Photos/DCalim_EventPoster.jpg",
       src: eventUrl,
-      status: "Planned",
+      status: "Completed",
       tech: ["Photoshop", "Brand Design", "Marketing"],
       summary:
         "Promotional design project balancing typography, contrast, and composition to drive audience engagement.",
+    },
+    {
+      title: "HomeHero",
+      button: "View",
+      buttonLink: "#", 
+      src: homeHeroUrl,
+      status: "In Progress",
+      tech: ["Swift", "Springboot", "Supabase", "MyBatis", "TCA"],
+      summary:
+        "Full-stack web application designed to help users manage and organize home-related tasks and information, with a focus on clean UI, intuitive workflows, and responsive design.",
+    },
+    {
+      title: "Squared",
+      button: "View",
+      buttonLink: "https://github.com/Dcalim/Squared-Game",
+      src: squaredUrl,
+      status: "Completed",
+      tech: ["React", "JavaScript", "CSS"],
+      summary:
+        "Interactive puzzle game focused on smooth gameplay, responsive UI, and reusable components for scalable feature additions.",
     },
     {
       title: "Company Website Mockup",
       button: "View",
       buttonLink: "src/assets/Photos/DCalim_MockUp.png",
       src: companyUrl,
-      status: "In Progress",
+      status: "Completed",
       tech: ["Figma", "UI Design", "Prototyping"],
       summary:
         "Modern business website concept exploring strong visual hierarchy, conversion-focused sections, and component consistency.",
@@ -166,9 +177,8 @@ function App() {
           eyebrow="02 / Work"
           title="Projects"
           accent="Projects"
-          kicker="A selection of personal and academic projects across full-stack development and design."
         />
-        <div className="mt-6 sm:mt-8">
+        <div className="py-6">
           <Carousel slides={slideData} />
         </div>
       </section>
@@ -181,7 +191,7 @@ function App() {
           eyebrow="03 / Get in touch"
           title="Contact"
           accent="Contact"
-          kicker="Have a project, opportunity, or just want to say hi? Send a message."
+          kicker="Send a message."
         />
         <div className="mt-6 px-4 sm:mt-8 sm:px-6 lg:px-8">
           <Contact />

@@ -53,9 +53,6 @@ const Contact = () => {
         <h3 className="text-center text-lg font-semibold text-[#F5F5F5] sm:text-xl">
           Contact Form
         </h3>
-        <p className="mt-1 text-center text-xs text-white/55 sm:text-sm">
-          Replies usually within a day or two.
-        </p>
 
         <div className="mt-4">
           <label

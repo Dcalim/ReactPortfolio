@@ -6,42 +6,87 @@ import {
   IconSparkles,
   IconBrandReact,
   IconBrandJavascript,
-  IconBrandTypescript,
   IconBrandTailwind,
   IconBrandPython,
   IconBrandHtml5,
-  IconBrandCss3,
   IconBrandGithub,
   IconBrandFigma,
-  IconBrandNodejs,
   IconCoffee,
   IconDatabase,
   IconTerminal2,
+  IconSql,
+  IconLetterC,
+  IconBrandSwift,
+  IconMathFunction,
+  IconBrandRedux,
+  IconLeaf,
+  IconCube,
+  IconBrandBootstrap,
+  IconTestPipe,
+  IconBug,
+  IconBrandAws,
+  IconCloud,
+  IconBrandDocker,
+  IconBrandFirebase,
+  IconBrandSupabase,
+  IconBrandUbuntu,
+  IconLayoutKanban,
+  IconUsersGroup,
+  IconPackages,
+  IconPalette,
 } from "@tabler/icons-react";
-import photo1 from "/src/assets/Photos/4D68B9B3-F3F2-42B3-AFC5-FE206D830DDF.PNG";
+import photo1 from "/src/assets/Photos/DionCalim2026.jpg";
 import SectionHeader from "../Section/SectionHeader";
 
 const skillGroups = [
   {
-    label: "Languages",
+    label: "Programming languages",
     items: [
-      { name: "JavaScript", Icon: IconBrandJavascript },
-      { name: "TypeScript", Icon: IconBrandTypescript },
       { name: "Java", Icon: IconCoffee },
+      { name: "C", Icon: IconLetterC },
       { name: "Python", Icon: IconBrandPython },
-      { name: "HTML5", Icon: IconBrandHtml5 },
-      { name: "CSS3", Icon: IconBrandCss3 },
+      { name: "JavaScript", Icon: IconBrandJavascript },
+      { name: "Swift", Icon: IconBrandSwift },
+      { name: "R", Icon: IconMathFunction },
+      { name: "SQL", Icon: IconSql },
+      { name: "HTML / CSS", Icon: IconBrandHtml5 },
     ],
   },
   {
-    label: "Frameworks & Tools",
+    label: "Frameworks & libraries",
     items: [
-      { name: "React", Icon: IconBrandReact },
-      { name: "Node.js", Icon: IconBrandNodejs },
-      { name: "Tailwind", Icon: IconBrandTailwind },
-      { name: "MongoDB", Icon: IconDatabase },
+      { name: "ReactJS", Icon: IconBrandReact },
+      { name: "Redux", Icon: IconBrandRedux },
+      { name: "Spring Boot", Icon: IconLeaf },
+      { name: "Three.js", Icon: IconCube },
+      { name: "Tailwind CSS", Icon: IconBrandTailwind },
+      { name: "Bootstrap", Icon: IconBrandBootstrap },
+      { name: "JUnit", Icon: IconTestPipe },
+      { name: "Mockito", Icon: IconBug },
+    ],
+  },
+  {
+    label: "Cloud, DevOps & databases",
+    items: [
+      { name: "AWS", Icon: IconBrandAws },
+      { name: "Salesforce", Icon: IconCloud },
+      { name: "Docker", Icon: IconBrandDocker },
+      { name: "Firebase", Icon: IconBrandFirebase },
+      { name: "PostgreSQL", Icon: IconDatabase },
+      { name: "MySQL", Icon: IconDatabase },
+      { name: "Supabase", Icon: IconBrandSupabase },
+    ],
+  },
+  {
+    label: "Tools & methodologies",
+    items: [
       { name: "Git", Icon: IconBrandGithub },
+      { name: "Linux", Icon: IconBrandUbuntu },
+      { name: "Jira", Icon: IconLayoutKanban },
+      { name: "Agile (Scrum)", Icon: IconUsersGroup },
       { name: "Figma", Icon: IconBrandFigma },
+      { name: "Adobe Creative Suite", Icon: IconPalette },
+      { name: "Maven", Icon: IconPackages },
     ],
   },
 ];
@@ -79,27 +124,23 @@ const About = () => {
         eyebrow="01 / About"
         title="About Me"
         accent="Me"
-        kicker="A short look at who I am, what I work with, and what I'm currently exploring."
       />
 
       <div className="mt-10 space-y-5 px-4 sm:space-y-6 sm:px-6 md:mt-12 lg:px-12">
         {/* Row 1: Hi I'm Dion + Photo (side by side on lg+) */}
         <div className="grid grid-cols-1 gap-5 sm:gap-6 lg:grid-cols-2">
-          <InfoCard icon={IconSparkles} title="Hi, I'm Dion" className="order-2 lg:order-1">
-            <p>
-              I'm a third-year{" "}
-              <span className="font-medium text-white">
-                Software Engineering
-              </span>{" "}
-              student at the University of Guelph with a strong foundation in
-              full-stack development, specializing in React and Java.
-            </p>
-            <p className="mt-3">
-              I enjoy building responsive web apps, designing clean interfaces,
-              and shipping projects that combine thoughtful design with
-              functional code.
-            </p>
-          </InfoCard>
+        <InfoCard icon={IconSparkles} title="Hi, I'm Dion" className="order-2 lg:order-1">
+          <p>
+            I'm a third-year{" "}
+            <span className="font-medium text-white">
+              Software Engineering
+            </span>{" "}
+            student at the University of Guelph with experience in full-stack development, particularly with React, Java, and SQL.
+          </p>
+          <p className="mt-3">
+            I enjoy building responsive web applications, designing clean interfaces, and turning ideas into polished, user-focused products. Outside of tech, I enjoy playing basketball, working out, and cooking.
+          </p>
+        </InfoCard>
 
           <div className="relative order-1 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] lg:order-2">
             <img
@@ -115,8 +156,8 @@ const About = () => {
         </div>
 
         {/* Row 2: Skills & Technologies (full width) */}
-        <InfoCard icon={IconCode} title="Skills & Technologies">
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
+        <InfoCard icon={IconCode} title="Skills & technologies">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-7">
             {skillGroups.map((group) => (
               <div key={group.label}>
                 <p className="mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-white/55">
@@ -144,11 +185,10 @@ const About = () => {
                 University of Guelph
               </span>
               <br />
-              B.Eng. Software Engineering · 3rd year
+              B.COMP. Software Engineering · 3rd year
             </p>
             <p className="mt-2 text-white/60">
-              Coursework in algorithms, data structures, software design, and
-              systems programming.
+            Relevant coursework: Data Structures, Algorithms, Operating Systems, Software Systems Development & Integration, Systems Analysis & Design
             </p>
           </InfoCard>
 
@@ -160,7 +200,7 @@ const About = () => {
                   className="mt-1 shrink-0 text-white/60"
                   stroke={1.75}
                 />
-                Leading lab sessions and mentoring peers
+                Interning at TD Bank as a Software Engineer
               </li>
               <li className="flex items-start gap-2">
                 <IconCode
@@ -168,7 +208,7 @@ const About = () => {
                   className="mt-1 shrink-0 text-white/60"
                   stroke={1.75}
                 />
-                Building React + data analysis tooling
+                Building out HomeHero
               </li>
               <li className="flex items-start gap-2">
                 <IconSparkles
@@ -176,7 +216,7 @@ const About = () => {
                   className="mt-1 shrink-0 text-white/60"
                   stroke={1.75}
                 />
-                Exploring new tech for better UX
+                Looking to connect for my next internship opportunity
               </li>
             </ul>
           </InfoCard>
