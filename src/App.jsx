@@ -68,7 +68,7 @@ function App() {
       status: "In Progress",
       tech: ["Swift", "Springboot", "Supabase", "MyBatis", "TCA"],
       summary:
-        "Full-stack web application designed to help users manage and organize home-related tasks and information, with a focus on clean UI, intuitive workflows, and responsive design.",
+        "Full-stack platform for shared households to manage tasks, split expenses, and stay organized.",
     },
     {
       title: "Squared",
