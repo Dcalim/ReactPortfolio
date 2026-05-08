@@ -76,7 +76,7 @@ function App() {
       buttonLink: "https://github.com/Dcalim/Squared-Game",
       src: squaredUrl,
       status: "Completed",
-      tech: ["React", "JavaScript", "CSS"],
+      tech: ["Java"],
       summary:
         "Interactive puzzle game focused on smooth gameplay, responsive UI, and reusable components for scalable feature additions.",
     },
