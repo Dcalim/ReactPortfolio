@@ -53,7 +53,7 @@ function App() {
     {
       title: "Event Promotion",
       button: "View",
-      buttonLink: "src/assets/Photos/DCalim_EventPoster.jpg",
+      buttonLink: eventUrl,
       src: eventUrl,
       status: "Completed",
       tech: ["Photoshop", "Brand Design", "Marketing"],
@@ -83,7 +83,7 @@ function App() {
     {
       title: "Company Website Mockup",
       button: "View",
-      buttonLink: "src/assets/Photos/DCalim_MockUp.png",
+      buttonLink: companyUrl,
       src: companyUrl,
       status: "Completed",
       tech: ["Figma", "UI Design", "Prototyping"],
