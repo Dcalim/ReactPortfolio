@@ -15,7 +15,7 @@ import {
   MobileNavMenu,
 } from "./components/Navbar/resizable-navbar";
 import Hero from './components/Hero/Hero'
-import homeHeroUrl from "/src/assets/Photos/HomeHero.png"
+import homeHeroUrl from "/src/assets/Photos/HomeHero.jpg"
 import { Carousel } from './components/Carousel/Carousel'
 import Contact from './components/Contact/Contact'
 import About from './components/About/About'
