@@ -25,7 +25,7 @@ import squaredUrl from "/src/assets/Photos/squared.jpg"
 import hoopsUrl from "/src/assets/Photos/hoops.jpg"
 import eventUrl from "/src/assets/Photos/DCalim_EventPoster.jpg"
 import companyUrl from "/src/assets/Photos/DCalim_MockUp.png"
-import resumeUrl from "/src/assets/Photos/DionCalim_Fall2025.jpg"
+import resumeUrl from "/src/assets/Photos/DionCalim_Resume2026.pdf"
 
 
 function App() {
