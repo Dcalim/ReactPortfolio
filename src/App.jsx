@@ -16,6 +16,7 @@ import {
 } from "./components/Navbar/resizable-navbar";
 import Hero from './components/Hero/Hero'
 import homeHeroUrl from "/src/assets/Photos/HomeHero.jpg"
+import homeHeroDemoUrl from "/src/assets/Photos/HomeHeroDemo.mp4"
 import { Carousel } from './components/Carousel/Carousel'
 import Contact from './components/Contact/Contact'
 import About from './components/About/About'
@@ -65,6 +66,8 @@ function App() {
       button: "View",
       buttonLink: "https://github.com/antonioconopio/HomeHero", 
       src: homeHeroUrl,
+      demoButton: "Demo Video",
+      demoLink: homeHeroDemoUrl,
       status: "In Progress",
       tech: ["Swift", "Springboot", "Supabase", "MyBatis", "TCA"],
       summary:

@@ -60,7 +60,17 @@ const Slide = ({
     event.currentTarget.style.opacity = "1";
   };
 
-  const { src, button, buttonLink, title, tech = [], summary, status } = slide;
+  const {
+    src,
+    button,
+    buttonLink,
+    demoButton,
+    demoLink,
+    title,
+    tech = [],
+    summary,
+    status,
+  } = slide;
   const isActive = current === index;
   const isExpanded = expandedIndex === index;
 
@@ -158,6 +168,18 @@ const Slide = ({
               >
                 {isExpanded ? "Hide" : "Details"}
               </button>
+            )}
+
+            {demoLink && (
+              <a
+                href={demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(event) => event.stopPropagation()}
+                className="inline-flex h-10 items-center justify-center rounded-full border border-white/20 bg-white/10 px-4 text-xs font-semibold text-white backdrop-blur-sm transition duration-200 hover:-translate-y-0.5 hover:bg-white/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30 sm:h-11 sm:text-sm"
+              >
+                {demoButton || "Demo"}
+              </a>
             )}
 
             <a
