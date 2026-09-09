@@ -63,7 +63,7 @@ function App() {
     {
       title: "HomeHero",
       button: "View",
-      buttonLink: "https://github.com/Dcalim/HomeHero", 
+      buttonLink: "https://github.com/antonioconopio/HomeHero", 
       src: homeHeroUrl,
       status: "In Progress",
       tech: ["Swift", "Springboot", "Supabase", "MyBatis", "TCA"],
